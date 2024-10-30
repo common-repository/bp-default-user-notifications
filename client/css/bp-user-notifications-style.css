@@ -1,0 +1,168 @@
+.bd-d-u-settings-container {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	line-height: 1.4em;
+	background-color: #dfe3ee;
+}
+
+.bd-d-u-settings {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.bd-d-u-settings-container .fatal-err {
+	background-color: #fcf8e3;
+	padding: 10px;
+	color: #8a6d3b;;
+	text-align: center;
+	border-color: #faf2cc;
+}
+
+/*.bd-d-u-settings td, .bd-d-u-settingss th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}*/
+.bd-d-u-settings .check-markup {
+	float: right;
+	margin-right: 20px;
+}
+
+.bd-d-u-settings td {
+	text-align: center;
+}
+
+.bd-d-u-settings span.desc {
+	float: left;
+}
+
+.bd-d-u-settings span {
+	color: #000;
+	padding: 10px;
+}
+
+.bd-d-u-settings .settings-title {
+	background-color: #ddddd4;
+	font-size: 18px;
+	color: #000;
+	padding: 20px;
+	margin-bottom: 10px;
+	color: #000;
+}
+
+.bd-d-u-settings .bt-d-u-warning {
+	color: #423222;
+	text-align: center;
+	padding: 10px;
+}
+
+.bd-d-u-settings tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+/*.bd-d-u-settings tr:hover {background-color: #ddd;}**/
+.bd-d-u-settings th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #4CAF50;
+	color: white;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+
+.switch input {
+	display: none;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked+.slider {
+	background-color: #2196F3;
+}
+
+input:focus+.slider {
+	box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+.bd-d-u-settings .button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: -5px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 13px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.bd-d-u-settings .reset {
+	background-color: #265d72;
+	margin: 10px;
+}
+
+@media screen and (max-width: 500px) {
+	.bd-d-u-settings .check-markup {
+		float: right;
+		margin-right: 100px;
+	}
+	.bd-d-u-settings .button {
+		padding: 15px;
+		margin: 2px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.bd-d-u-settings .check-markup {
+		float: right;
+		margin-right: 150px;
+	}
+	.bd-d-u-settings .button {
+		padding: 15px;
+		margin: 2px;
+	}
+}
